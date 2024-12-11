@@ -2179,9 +2179,6 @@ type AdaptiveState
          ConvertTripleSlashCommentToXmlTaggedDoc.fix tryGetParseAndCheckResultsForFile
          GenerateXmlDocumentation.fix tryGetParseAndCheckResultsForFile
          RemoveRedundantAttributeSuffix.fix tryGetParseAndCheckResultsForFile
-         Run.ifEnabled
-           (fun _ -> config.AddPrivateAccessModifier)
-           (AddPrivateAccessModifier.fix tryGetParseAndCheckResultsForFile symbolUseWorkspace)
          UseTripleQuotedInterpolation.fix tryGetParseAndCheckResultsForFile
          RenameParamToMatchSignature.fix tryGetParseAndCheckResultsForFile
          RemovePatternArgument.fix tryGetParseAndCheckResultsForFile
