@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
-    <TargetFrameworks Condition="'$(BuildNet9)' == 'true'">net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(BuildNet7)' == 'true'">net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(BuildNet8)' == 'true'">net6.0;net7.0;net8.0</TargetFrameworks>
+    <TargetFrameworks Condition="'$(BuildNet9)' == 'true'">net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <NoWarn>$(NoWarn);FS0057</NoWarn> <!-- Allows using experimental FCS APIs -->
   </PropertyGroup>
